@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <title>IF Simplex</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-menu">
+        <nav>
+            <a class="logo" href="#home">IF Simplex</a>
+            <ul class="nav-list">
+              <li><a href="#home">Início</a></li>
+              <li><a href="#teoria">Teoria</a></li>
+              <li><a href="#calcular">Cálculo</a></li>
+              <li><a href="#sugestao">Sugestões</a></li>
+            </ul>
+          </nav>
+          <div class="barra"></div>
+
+          <section class="home d-flex aling-itens-center h-75 " id="home">
+            <div class="container">
+              <div class="row d-flex aling-itens-center">
+                <div class="col-xl-4">
+                    <h1 class="text-center">INÍCIO</h1>
+                    <p class="text-justify">O IF Simplex é um projeto desenvolvido por alunos do IFMG - Campus Sabará, com o objetivo de calcular soluções para algoritimos simples utilizando o método simplex.</p>
+                </div>
+                <div class="col-xl-8 d-flex justify-content-end">
+                  <img src="assets/img/logo.png" class="img-fluid" alt="Logo IF Simplex">
+                </div>
+              </div>
+            </div>
+          </section>
+          
+    </header>
+
+    <!-- Main -->>
+    <main class="container-menu">
+
+      <!-- Teoria-->>
+      <section class="teoria mb-5 pb-5" id="teoria">
+        <div class="container">
+          <h2 class="text-center pt-5 pb-3">Teoria</h2>
+          <p class="paragrafo d-flex mx-auto text-center w-75 mb-5" >O método Simplex é um processo iterativo que permite melhorar a solução da função objetivo em cada etapa. O processo finaliza quando não é possível continuar melhorando este valor, ou seja, quando se obtenha a solução ótima (o maior ou menor valor possível, segundo o caso, para que todas as restrições sejam satisfeitas).</p>
+          <div class="row">
+              <div class="col -xl-6 cards">
+                <div class="card">
+                  <img src="assets/img/phpsimplex.png" class="card-img-top" alt="php simplex logo">
+                  <div class="card-body">
+                    <h5 class="card-title text-center my-3">Teoria Simplex</h5>
+                    <p class="card-text text-center mb-5">Conheça um pouco mais sobre a teoria do método simplex</p>
+                    <a href="http://www.phpsimplex.com/pt/teoria_metodo_simplex.htm" target="_blank"><button class="btn btn-primary d-flex mx-auto px-4">Saiba Mais</button></a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Calcular-->
+      
+      <section class="calcular mb-5 pb-5" id="calcular">
+        <div class="container">
+          <h2 class="text-center pt-5 pb-3">Cálculo</h2>
+          <h4 class="text-center pt-5 pb-3">Escreva seu problema de programação linear abaixo</h4>
+          <div class="card">
+            <div class="card-header text-center">
+              Calculadora Simplex
+            </div>
+            <div class="card-body">
+              <p class="card-text">Clique no botão para começar os cálculos.</p>
+              <a href="calcular.html" ><button class="btn btn-primary d-flex mx-auto px-4">Calcular</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!--Sugestão-->
+
+      <section class="sugestao mb-5 pb-5" id="sugestao">
+        <div class="container">
+          <h2 class="text-center pt-5 pb-5">Sugestões</h2>
+          <div class="wrapper">
+            <h3>Deixe aqui a sua avaliação.</h3>
+            <form action="#">
+              <div class="rating">
+                <input type="number" name="rating" hidden>
+                <i class='bx bx-star star' style="--i: 0;"></i>
+                <i class='bx bx-star star' style="--i: 1;"></i>
+                <i class='bx bx-star star' style="--i: 2;"></i>
+                <i class='bx bx-star star' style="--i: 3;"></i>
+                <i class='bx bx-star star' style="--i: 4;"></i>
+              </div>
+              <textarea name="opinion" cols="30" rows="5" placeholder="Conte-nos um pouco mais da sua experiência ..."></textarea>
+              <div class="btn-group">
+                <button type="submit" class="btn submit">Submit</button>
+                <button class="btn cancel">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer  py-5">
+        <div class="container text-center">
+          <p class="text-muted mb-0 py-2">© 2023 IFMG Simplex All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>

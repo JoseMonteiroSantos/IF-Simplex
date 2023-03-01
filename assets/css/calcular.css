@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+	background-color: #ffffff;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: lightgray; 
+  }
+
+body{
+	text-align: center;
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font-size: 20pt;
+}
+
+
+hr{
+	border-color : rgb(0, 0, 0);
+	background-color : white;
+	color: rgb(0, 0, 0);
+}
+
+.hint { display: none; color: gray; font-style: italic; }
+input#iMax:focus + .hint { display :  block }
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+    color: #1ac11a;
+	text-decoration: none;
+  }
+
+
+
+.logo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1ac11a;
+  }
+
+  .voltar {
+	justify-content: end;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    text-transform: none;
+    letter-spacing: 2px;
+    color:#ffffff;
+	
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width:100%;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #012501;
+    height: 15vh;
+	
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+
+  .barra{
+    display: flex;
+    width: 100%;
+    top:13%;
+    left: 0;
+    right: 0;
+    background: #008102;
+    height: 3vh;
+  }
+  
+  
+.btn{
+	background-color:#012501;
+}
+
+.btn:hover{
+	background-color:#008102;
+}
+
+#tableInicial{
+	margin-top: 10px;
+}
+table{
+	table-layout: fixed;
+}
+
+table td:first-child {
+	background-color: rgb(51, 133, 196);
+}
+
+table tr:first-child {
+	background-color: rgb(51, 133, 196);
+}
+
+
+table tr:first-child td:first-child{
+	background-color: rgba(84, 196, 84, 0.986);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+button{
+	margin: 3px;
+	font-size: 22pt;
+}
+
+input{
+	width: 70px;
+	text-align: center;
+	border-radius: 3px;
+}
+span.input-group-text{
+	font-size: 22pt;
+}
+
+button#firstPhase, button#solveSimplex, button#stepByStep, button#again {
+	font-size: 18pt;
+}
